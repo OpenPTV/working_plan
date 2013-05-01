@@ -23,4 +23,5 @@ Alex created this file and open it for the discussion. This file should be edite
 We recommend to try first http://try.github.io and also see the lectures on the site Software Carpentry, e.g. http://software-carpentry.org/4_0/vc/index.html and http://software-carpentry.org/blog/2012/06/git-tutorial-links.html
 
 
+Marc
 Beat was here
