@@ -9,6 +9,24 @@ Working plan of the OpenPTV consortium is the result of the kick-off meeting dur
 The question is whethere we  discard C-Tcl/Tk version or incorporate the new developments of TU/e and RTWH
 in the existing code?
 
+Alex: `@alexlib` on Github. I vote for option 1: stop developing C-Tcl/Tk and instead put all the effort on learning how to move
+the new development into the `liboptv`. I also suggest to add to the to-do list here our decision on the committees:  
+1. Code manager  
+2. Documentation manager  
+3. Website manager  
+4. Public relations manager - new users, new collaborators, Facebook, LinkedIn, etc.  
+
+the managers are not doing all the work themselves but ask for help from the group and coordinate it. 
+
+We also have to decide about the voting procedure, i.e. predefine democracy. 
+
+(note if you want to get new line break, leave TWO SPACES `  ` at the end of the line, `Enter` is not enough :))
+
+
+
+
+
+
 
 
 ## How to work with this file? 
