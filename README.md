@@ -24,7 +24,7 @@ is obsolete and would be depreceated in the future. Please **DO NOT** develop yo
 
 ### liboptv
 
-`liboptv` is the abbreviation of OpenPTV library. The OpenPTV community will actively develop the library that will 
+`liboptv` is the abbreviation of OpenPTV library. The OpenPTV community had decided to actively **develop the library** that will 
 contain all the major algorithms for three dimensional particle tracking velocimetry, such as particle identification 
 (or segmentation), calibration, correspondence (or stereo-matching), tracking and post-processing routines. 
 
@@ -38,38 +38,33 @@ This is the new GUI frontend, written in Python 2.7 and using NumPy, SciPy, Matp
 and Enthought Tools Suite (TraitsUI, Chaco, Enable) from Enthought Inc. for quick GUI development. This version is developed
 by the Turbulence Structure Laboratory at Tel Aviv University. 
 
-The OpenPTV kick-off meeting decided to choose this framework (with possible change of the GUI to PyQt for example) as 
-the central direction course. This is mainly because PyPTV already uses the `liboptv` approach:
+The OpenPTV kick-off meeting decided to **choose openptv-python framework** as a central framework (with possible change of the GUI to PyQt for example) as 
+the central direction course. 
 
-Python GUI -> Python -> Cython -> C 
+This is mainly because PyPTV already uses the `liboptv` approach: `Python GUI -> Python -> Cython -> liboptv` and it is 
+easily extendable thanks to Python.
 
 
+### The workplan as it appeares on the whiteboard
 
-
-## C-Tcl/Tk version
-
-The question is whethere we  discard C-Tcl/Tk version or incorporate the new developments of TU/e and RTWH
-in the existing code?
-
-Alex: `@alexlib` on Github. I vote for option 1: stop developing C-Tcl/Tk and instead put all the effort on learning how to move
-the new development into the `liboptv`. I also suggest to add to the to-do list here our decision on the committees:  
-1. Code manager  
-2. Documentation manager  
-3. Website manager  
-4. Public relations manager - new users, new collaborators, Facebook, LinkedIn, etc.  
-
-the managers are not doing all the work themselves but ask for help from the group and coordinate it. 
-
-We also have to decide about the voting procedure, i.e. predefine democracy. 
-
-(note if you want to get new line break, leave TWO SPACES `  ` at the end of the line, `Enter` is not enough :))
+1. move all the code from `C-Tcl/Tk` to `liboptv`
+2. add all the new developments by different groups to `liboptv`
+3. stop using `C-Tcl/Tk`
+4. write documentation, tentatively Doxygen was chosen as a unified framework for C and Python code
+5. validate your code, learn Unit testing, write tests, create validation cases using DNS or another true cases
+6. make it clear how to cite this work, create a list of references
+7. create simple installations for the users, create simple instructions for the developers
+8. look into some option to run the code online, from the browser
+9. change all the parameter files from undocumented ASCII format to INF (or XML) format. 
+10. data files remain in ASCII until we have a better idea and `liboptv` will be ready with a single function that deals with I/O
+11. License has not been chosen, we need to choose and the two suggestions of LGPL vs MIT/BSD-like shall be decided after some learning process
+12. Use Software Carpentry or other tutorial sites to learn about Git, Github and unit testing
+13. think of investing your time, time of your students, collect donations, apply for proposals, propose GSOC
 
 
 
 
-
-
-
+----------
 
 ## How to work with this file? 
 
