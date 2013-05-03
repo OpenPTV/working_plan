@@ -45,7 +45,7 @@ This is mainly because PyPTV already uses the `liboptv` approach: `Python GUI ->
 easily extendable thanks to Python.
 
 
-### The workplan as it appeares on the whiteboard
+### The workplan as it appears on the whiteboard
 
 1. move all the code from `C-Tcl/Tk` to `liboptv`
 2. add all the new developments by different groups to `liboptv`
