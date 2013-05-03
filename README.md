@@ -68,11 +68,45 @@ easily extendable thanks to Python.
 
 ## How to work with this file? 
 
-Alex created this file and open it for the discussion. This file should be edited in the following way: 
+This file should be edited in the following way: 
+
+If you do it for the first time: 
 
 1. create Github account
-2. Fork this repository with the Readme.md file
-3. Update the file in the way you want, commit it and push to your repository (only to your, not to OpenPTV)
-4. Send us your pull request and we'll accept it if your file can be merged with the other editions and whether it does not contain mistakes and typos.
+2. Fork this repository with the Readme.md file (using the FORK button)
+3. Update the file in the way you want, commit it and push to your repository (only to yours, not to OpenPTV)
+
+    git add Readme.md
+    git commit -m "My changes are: ..."
+    git push origin master
+    
+4. Create Pull Request from `origin:master` to `OpenPTV:master`
+
+
+
+If you already have the forked repository and you want to update it according to the latest situation:
+
+1. update your local copy in two steps: 
+* add this repository as your additional remote (your repository is the default remote)
+
+    git remote add openptv git@github.com:OpenPTV/working_plan.git
+    
+* pull the updates to your local copy and push it immediately to your remote one (to the `origin`):  
+
+    git pull openptv master
+
+* edit the file and push it to your own remote `origin` repository
+
+    git push origin master
+    
+
+4. Create Pull Request from `origin:master` to `OpenPTV:master`
+
+
+
+
+    
+
+
 
 We recommend to try first http://try.github.io and also see the lectures on the site Software Carpentry, e.g. http://software-carpentry.org/4_0/vc/index.html and http://software-carpentry.org/blog/2012/06/git-tutorial-links.html
