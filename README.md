@@ -76,12 +76,11 @@ If you do it for the first time:
 2. Fork this repository with the Readme.md file (using the FORK button)
 3. Update the file in the way you want, commit it and push to your repository (only to yours, not to OpenPTV)
 
-    git add Readme.md
-    git commit -m "My changes are: ..."
-    git push origin master
+        git add Readme.md  
+        git commit -m "My changes are: ..."  
+        git push origin master  
     
 4. Create Pull Request from `origin:master` to `OpenPTV:master`
-
 
 
 If you already have the forked repository and you want to update it according to the latest situation:
@@ -89,15 +88,15 @@ If you already have the forked repository and you want to update it according to
 1. update your local copy in two steps: 
 * add this repository as your additional remote (your repository is the default remote)
 
-    git remote add openptv git@github.com:OpenPTV/working_plan.git
+            git remote add openptv git@github.com:OpenPTV/working_plan.git  
     
 * pull the updates to your local copy and push it immediately to your remote one (to the `origin`):  
 
-    git pull openptv master
+            git pull openptv master  
 
 * edit the file and push it to your own remote `origin` repository
 
-    git push origin master
+            git push origin master  
     
 
 4. Create Pull Request from `origin:master` to `OpenPTV:master`
