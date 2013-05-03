@@ -1,7 +1,49 @@
 Working plan of the OpenPTV consortium
 ============
 
-Working plan of the OpenPTV consortium is the result of the kick-off meeting during the workshop in Tel Aviv. 
+Working plan of the OpenPTV consortium is the result of the kick-off meeting during the OpenPTV workshop in Tel Aviv, 
+April 29 - May 3, 2013
+
+
+## Whiteboard snapshot
+
+![Snapshot](http://goo.gl/FyaeW)
+
+
+## Explanation
+
+For the background of the meeting and the ideas behind it, please see the introductory lecture prepared by the organizers
+[Slideshow](http://goo.gl/h98kA)
+
+
+### Original Zurich version
+
+Original Zurich version is the historical name of the code developed at ETH Zurich from 1980's. This code is present in 
+the OpenPTV repository under the name `C-Tcl/Tk`. One of the major decisions of the meeting is that this version
+is obsolete and would be depreceated in the future. Please **DO NOT** develop your new algorithms in `C-Tcl/Tk` framework. 
+
+### liboptv
+
+`liboptv` is the abbreviation of OpenPTV library. The OpenPTV community will actively develop the library that will 
+contain all the major algorithms for three dimensional particle tracking velocimetry, such as particle identification 
+(or segmentation), calibration, correspondence (or stereo-matching), tracking and post-processing routines. 
+
+The library will be developed by moving functionality from the `C-Tcl/Tk` source code base, written in ANSI-C into the 
+library. The first examples exist in `OpenPTV/openptv` repository. This is our central, community approved code base.
+
+
+### PyPTV or OpenPTV-Python
+
+This is the new GUI frontend, written in Python 2.7 and using NumPy, SciPy, Matplotlib, Cython from the Scientific Python stack 
+and Enthought Tools Suite (TraitsUI, Chaco, Enable) from Enthought Inc. for quick GUI development. This version is developed
+by the Turbulence Structure Laboratory at Tel Aviv University. 
+
+The OpenPTV kick-off meeting decided to choose this framework (with possible change of the GUI to PyQt for example) as 
+the central direction course. This is mainly because PyPTV already uses the `liboptv` approach:
+
+Python GUI -> Python -> Cython -> C 
+
+
 
 
 ## C-Tcl/Tk version
